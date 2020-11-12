@@ -1,4 +1,4 @@
-- id: core-001
+- id: coreX-001
   description: Find 'password' keyword in flow data
   regex: '([pP][aA][sS][sS][wW][oO][rR][dD])'
   severity: Medium  # Allowed values: Low, Medium, High
@@ -18,3 +18,8 @@
   regex: '(^192\.168\.([0-9]|[0-9][0-9]|[0-2][0-5][0-5])\.([0-9]|[0-9][0-9]|[0-2][0-5][0-5])$)|(^172\.([1][6-9]|[2][0-9]|[3][0-1])\.([0-9]|[0-9][0-9]|[0-2][0-5][0-5])\.([0-9]|[0-9][0-9]|[0-2][0-5][0-5])$)|(^10\.([0-9]|[0-9][0-9]|[0-2][0-5][0-5])\.([0-9]|[0-9][0-9]|[0-2][0-5][0-5])\.([0-9]|[0-9][0-9]|[0-2][0-5][0-5])$)'
   severity: Medium  # Allowed values: Low, Medium, High
   searchIn: Headers  # Allowed values: Response, Request, Headers, All
+- id: core-005
+  description: HTTP Headers reveals ASP.NET version
+  regex: '([Xx]-[Aa][Ss][Pp][Nn][Ee][Tt]-[Vv][Ee][Rr][Ss][Ii][Oo][Nn][\s]*:)'
+  severity: Low
+  searchIn: Headers
